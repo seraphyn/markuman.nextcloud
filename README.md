@@ -19,7 +19,11 @@ Ansible Nextcloud Collection - that brings up your nextcloud usage to the next l
 
 ## install
 
+**From galaxy.ansible.com**  
 `ansible-galaxy collection install markuman.nextcloud`
+
+It's also possible to install this collection directly from SCM.  
+`ansible-galaxy collection install git+https://github.com/markuman/markuman.nextcloud.git`
 
 ## Documentation / Usage
 
@@ -36,7 +40,8 @@ Ansible Nextcloud Collection - that brings up your nextcloud usage to the next l
 | https://github.com/markuman/markuman.nextcloud | push mirror, pull-requests and Issues |
 
 
-| Collection Version | Supported OS | Nextcloud Version | Collection EOL |
-| --- | --- | --- | --- |
-| 9 | Ubuntu 20.04 | 23 | 2022.12 |
-| 10 | Ubuntu 22.04 | >= 25 | TBA |
+| Collection Version | Supported OS | Nextcloud Version | Collection EOL | PHP | Mariadb |
+| --- | --- | --- | --- | --- | --- |
+| <= 9 | Ubuntu 20.04 | <= 23 | 2022.12 | 7.4 | 10.3 |
+| <= 28 | Ubuntu 22.04 | <= 28 | 2024.09 | 8.1 | 10.6 |
+| >= 29 | Ubuntu 24.04 | >= 29 | 2026.09 | 8.3 | 10.11 |
