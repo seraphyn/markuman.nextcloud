@@ -4,6 +4,14 @@ markuman nextcloud Release Notes
 
 .. contents:: Topics
 
+v29.0.0
+=======
+
+Release Summary
+---------------
+
+Version 29 and greate supports Ubuntu 24.04, PHP 8.3 and mariadb 10.11 only.
+
 v28.0.1
 =======
 

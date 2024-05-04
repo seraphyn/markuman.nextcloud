@@ -49,7 +49,7 @@
     state: latest
     name:
       - redis-server
-      - php8.1-redis
+      - php8.3-redis
 
 - name: enable ipv6 for ufw
   ansible.builtin.lineinfile:

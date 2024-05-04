@@ -140,6 +140,13 @@ releases:
     fragments:
     - 28.0.1.yml
     release_date: '2024-03-24'
+  29.0.0:
+    changes:
+      release_summary: Version 29 and greate supports Ubuntu 24.04, PHP 8.3 and mariadb
+        10.11 only.
+    fragments:
+    - 29.yml
+    release_date: '2024-05-04'
   9.0.1-dev:
     changes:
       bugfixes:

@@ -78,6 +78,7 @@
     - overwrite.cli.url --value=https://{{ nextcloud_fqdn }}
     - overwriteprotocol --value="https"
     - htaccess.IgnoreFrontController --value=true
+    - maintenance_window_start --type=integer --value=1
 
 - name: nextcloud system settings for redis
   args:

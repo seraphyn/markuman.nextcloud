@@ -4,12 +4,12 @@
 - include_tasks: 04-php.yml
 - include_tasks: 05-caddy.yml
 - include_tasks: 06-nextcloud.yml
+- include_tasks: 07-coturn.yml
 - include_tasks: 08-media.yml
 
 - name: check if a reboot is required
   ansible.builtin.stat:
     path: /var/run/reboot-required
-    get_md5: false
   register: reboot_required_file
 
 - name: Unconditionally reboot the machine with all defaults

@@ -43,7 +43,6 @@
       no-tls
       no-dtls
       stale-nonce
-      no-loopback-peers
       no-multicast-peers
       proc-user=turnserver
       proc-group=turnserver
@@ -58,4 +57,4 @@
 - name: enable coturn for talk
   args:
     chdir: /var/www/nextcloud/
-  ansible.builtin.command: "sudo -u www-data php occ talk:turn:add {{ nextcloud_fqdn }} udp,tcp --secret={{ coturn_secret }}"
+  ansible.builtin.command: "sudo -u www-data php occ talk:turn:add turn {{ nextcloud_fqdn }} udp,tcp --secret={{ coturn_secret }}"
