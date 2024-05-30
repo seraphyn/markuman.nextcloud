@@ -4,6 +4,26 @@ markuman nextcloud Release Notes
 
 .. contents:: Topics
 
+v29.0.1
+=======
+
+Release Summary
+---------------
+
+This is the minor release of the ``markuman.nextcloud`` collection.
+
+Minor Changes
+-------------
+
+- bump caddy to 2.8.0
+- bump nextcloud to 29.0.1
+
+Bugfixes
+--------
+
+- add trailing slash on well-known urls.
+- richdocumentscode installation is only available for x86_64.
+
 v29.0.0
 =======
 

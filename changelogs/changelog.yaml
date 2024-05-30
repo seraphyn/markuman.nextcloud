@@ -147,6 +147,18 @@ releases:
     fragments:
     - 29.yml
     release_date: '2024-05-04'
+  29.0.1:
+    changes:
+      bugfixes:
+      - add trailing slash on well-known urls.
+      - richdocumentscode installation is only available for x86_64.
+      minor_changes:
+      - bump caddy to 2.8.0
+      - bump nextcloud to 29.0.1
+      release_summary: This is the minor release of the ``markuman.nextcloud`` collection.
+    fragments:
+    - 29.0.1.yml
+    release_date: '2024-05-30'
   9.0.1-dev:
     changes:
       bugfixes:
