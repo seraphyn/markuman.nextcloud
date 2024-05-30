@@ -5,6 +5,7 @@
 - name: restart caddy
   ansible.builtin.systemd:
     name: caddy
+    daemon_reload: true
     state: restarted
 
 - name: restart php-fpm

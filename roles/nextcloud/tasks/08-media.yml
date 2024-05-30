@@ -18,6 +18,19 @@
         - previewgenerator
         - recognize
         - richdocuments
+      failed_when:
+        - result.rc == 1
+        - '"already installed" not in result.stdout'
+      changed_when:
+        - result.rc == 0
+
+    - name: install richdocumentscode builtin server (only available on x86_64!)
+      when: "ansible_architecture == 'x86_64'"
+      register: result
+      args:
+        chdir: /var/www/nextcloud/
+      ansible.builtin.command: "sudo -u www-data php -d memory_limit=512M occ app:install {{ item }}"
+      with_items:
         - richdocumentscode
       failed_when:
         - result.rc == 1
