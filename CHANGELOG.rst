@@ -4,7 +4,7 @@ markuman nextcloud Release Notes
 
 .. contents:: Topics
 
-v29.0.1
+v29.0.2
 =======
 
 Release Summary
